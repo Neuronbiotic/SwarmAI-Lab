@@ -1,0 +1,4 @@
+# SwarmAI-Lab has no mandatory external dependencies for core simulations.
+# Optional extras for visualization or YAML parsing:
+# - matplotlib
+# - pyyaml
