@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+# Ensure notebooks preserve metadata while keeping small diffs
+*.ipynb diff=jupyternotebook

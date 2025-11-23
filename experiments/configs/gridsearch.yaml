@@ -1,0 +1,29 @@
+metadata:
+  name: rule-comparison
+  description: Compare average and majority rules across seed variations.
+simulation:
+  num_agents: 6
+  initial_states: [0, 0, 0.5, 1, 1, 1]
+  rule: average
+  steps: 6
+  seed: 11
+sweeps:
+  - name: average-seed-11
+    overrides:
+      rule: average
+      seed: 11
+  - name: average-seed-99
+    overrides:
+      rule: average
+      seed: 99
+  - name: majority-seed-11
+    overrides:
+      rule: majority
+      seed: 11
+  - name: majority-seed-99
+    overrides:
+      rule: majority
+      seed: 99
+output:
+  directory: artifacts/experiments
+  save_history: false

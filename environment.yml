@@ -1,0 +1,12 @@
+name: swarmlab
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - pip
+  - numpy>=1.24
+  - pip:
+      - matplotlib
+      - pyyaml
+      - jsonschema
+      - pytest
