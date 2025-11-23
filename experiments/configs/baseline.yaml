@@ -1,0 +1,12 @@
+metadata:
+  name: baseline-average
+  description: Simple average consensus run for quick sanity checks.
+simulation:
+  num_agents: 5
+  initial_states: [0.0, 0.25, 0.5, 0.75, 1.0]
+  rule: average
+  steps: 8
+  seed: 7
+output:
+  directory: artifacts/experiments
+  save_history: true
